@@ -1,0 +1,43 @@
+public class CustomerTesterApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 // display a welcome message
+        System.out.println("Welcome to the Customer Viewer");
+        System.out.println();
+        
+        Scanner getCustomernumber = new Scanner(System.in);
+        String choice = "y";
+        while (choice.equalsIgnoreCase("y")) 
+        {  
+     // get input from user
+    	System.out.print("Enter a customer number: ");
+    	String CustomerId=getCustomernumber.nextLine();
+    	int customerNumber=Integer.parseInt(CustomerId);
+    	Customer myCustomer = CustomerDB.getCustomer(customerNumber);
+
+    	if (myCustomer.getName().equalsIgnoreCase("Unknown")){
+    		
+            System.out.println("the customer doesnot exist");
+    	}
+    	else {   		
+    	// display the output
+        String message = "" +
+            "" + myCustomer.getName() + "\n" +
+            "" + myCustomer.getAddress() + "\n" +
+            "" + myCustomer.getCityandcounty() + "\n"+
+            "" + myCustomer.getEmail() + "\n"+
+            "" + myCustomer.getPhone() + "\n";
+        System.out.println(message);
+    	}
+    	
+     // see if the user wants to continue
+        System.out.print("Continue? (y/n): ");
+        choice = getCustomernumber.nextLine();
+        System.out.println();  	     
+        }    
+        
+	getCustomernumber.close();
+    System.out.println("Bye!");
+}
+}
