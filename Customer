@@ -1,0 +1,50 @@
+public class Customer {
+	
+	private String name;
+	private String address;
+	private String cityandcounty;
+	private String email;
+	private String phone;
+
+	public Customer() {
+		name="";
+		address="";
+		cityandcounty="";
+		email="";
+		phone="";			
+	}
+	  public void setName(String name) {
+	        this.name = name;
+	    }
+	    public String getName() {
+	        return name;
+	    }
+	    
+	    public void setAddress(String address) {
+	        this.address = address;
+	    }
+	    public String getAddress() {
+	        return address;
+	    }
+	    
+	    public void setCityandcounty(String city) {
+	        this.cityandcounty = cityandcounty;
+	    }
+	    public String getCityandcounty() {
+	        return cityandcounty;
+	    }
+
+	    public void setEmail(String email) {
+	        this.email = email;
+	    }
+	    public String getEmail() {
+	        return email;
+	    }
+	    public void setPhone(String phone) {
+	        this.phone = phone;
+	    }
+
+	    public String getPhone() {
+	        return phone;
+	    }	    
+}
