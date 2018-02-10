@@ -1,0 +1,37 @@
+public class CustomerDB {
+
+	public static Customer getCustomer(int customernumber) { 
+		
+		
+		// create the Product object
+		Customer myCustomer = new Customer();
+		
+	        if (customernumber== 1001) {
+	        	myCustomer.setName("Barbara Martyn");
+	        	myCustomer.setAddress("3400 Richmond Road");
+	        	myCustomer.setCityandcounty("Dublin, Co. Dublin");
+	        	myCustomer.setEmail("Bmartyn12@gmail.com");
+	        	myCustomer.setPhone("08615232665");
+	        }
+	        else if (customernumber==1002){
+	        	myCustomer.setName("Carl Vangan");
+	        	myCustomer.setAddress("327 Franklin Street");
+	        	myCustomer.setCityandcounty("Gort, Co.Galway");
+	        	myCustomer.setEmail("cjones@gmail.com");
+	        	myCustomer.setPhone("0864452445");
+	        }
+	        else if (customernumber==1003){
+	        	myCustomer.setName("Dave Jones");
+	        	myCustomer.setAddress("518 Commanche Road.");
+	        	myCustomer.setCityandcounty("Ennis, Co.Clare");
+	        	myCustomer.setEmail("davidjones@gmail.com");
+	        	myCustomer.setPhone("08711232445");
+	        }
+           else {
+        	   myCustomer.setName("Unknown"); 	
+	        }
+	       
+	        return myCustomer;	         
+        
+}
+}
