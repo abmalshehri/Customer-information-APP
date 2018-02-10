@@ -1,2 +1,1 @@
-# Customer-information-APP
-Display customer information
+an app to display customer information ,so The application prompts the user to enter a customer number. If a customer with that number exists, the application displays the customer’s name, address, email and phone number. If not, the application displays an appropriate message that includes the customer number.
